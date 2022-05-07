@@ -1,0 +1,4 @@
+{
+    "postApiUrl":"https://oggustowp.bomajans.site/wp-json/wp/v2/posts?_embedded[&#39;wp:featuredmedia&#39;][&#39;0&#39;].source_url%20&amp;%20_fields=id,slug,%20link,%20title,%20excerpt.rendered,%20featured_media,%20img_url",
+    "categoryApi":"https://oggustowp.bomajans.site/wp-json/wp/v2/categories?_fields=id,%20link,%20name,%20slug,%20acf"
+}
