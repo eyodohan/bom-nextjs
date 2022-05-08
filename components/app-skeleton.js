@@ -6,8 +6,8 @@ import Stack from '@mui/material/Stack';
 const AppSkeleton = () => {
   return (
     <Grid container item xs={12} sm={6} md={4}>
-      <Box p={2}>
-        <Stack spacing={1} width='350px'>
+      <Box p={2} sx={{ margin: '0 auto' }}>
+        <Stack spacing={1} width='300px'>
           <Skeleton
             variant='rectangular'
             width={'100%'}

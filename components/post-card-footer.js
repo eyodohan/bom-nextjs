@@ -1,16 +1,14 @@
 import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-
-import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
-import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
-
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import CloseIcon from '@mui/icons-material/Close';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import IconButton from '@mui/material/IconButton';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const PostCardFooter = ({ show, showCartLink }) => {
   return (
@@ -19,7 +17,6 @@ const PostCardFooter = ({ show, showCartLink }) => {
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'space-between',
             alignItems: 'center',
             paddingTop: 1.5,
           }}
@@ -27,7 +24,7 @@ const PostCardFooter = ({ show, showCartLink }) => {
           <IconButton size='small' onClick={showCartLink}>
             <ShareOutlinedIcon sx={{ color: ' #9faabb' }} />
           </IconButton>
-          <IconButton size='small'>
+          <IconButton size='small' sx={{ position: 'absolute', right: '60px' }}>
             <MoreHorizOutlinedIcon sx={{ color: ' #9faabb' }} />
           </IconButton>
         </Box>
@@ -35,7 +32,6 @@ const PostCardFooter = ({ show, showCartLink }) => {
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'space-between',
             alignItems: 'center',
             paddingTop: 1.5,
           }}
@@ -57,7 +53,7 @@ const PostCardFooter = ({ show, showCartLink }) => {
             <TelegramIcon sx={{ color: ' #9faabb' }} />
             <EmailOutlinedIcon sx={{ color: ' #9faabb' }} />
           </Box>
-          <IconButton size='small'>
+          <IconButton size='small' sx={{ position: 'absolute', right: '60px' }}>
             <MoreHorizOutlinedIcon sx={{ color: ' #9faabb' }} />
           </IconButton>
         </Box>
